@@ -10,19 +10,13 @@ var userChoice=prompt(`Password length (8-->128 characters):`)
 if (userChoice>=8 && userChoice<=128){
      var userDecision= prompt(`Would you like to include lowercase, uppercase, symbols and numbers in the password? Y/N (If not it would be impossible to create a password)`)
      if(userDecision=="Y"){
-     //writePassword();
-     //var password=generatePwd()
-     //alert(password)
+     writePassword();
      }
     
      else{alert(`Choice not valid`)}}
    
 else{alert(`Choice not valid`)}
     
-
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePwd();
@@ -31,7 +25,7 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
 
 // Password generation function
 function generatePwd() {
