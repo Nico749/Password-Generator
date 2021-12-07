@@ -1,6 +1,6 @@
 function generateMsg(){
   
-alert(`Password should include:
+alert(`A strong password should include:
 - A mixture of both uppercase and lowercase letters.
 - A mixture of letters and numbers.
 - Inclusion of at least one special character, e.g., ! @ # ? ] `);
@@ -8,14 +8,14 @@ alert(`Password should include:
 var userChoice=prompt(`Password length (8-->128 characters):`)
    
 if (userChoice>=8 && userChoice<=128){
+     
      var userDecision= prompt(`Would you like to include lowercase, uppercase, symbols and numbers in the password? Y/N (If not it would be impossible to create a password)`)
      if(userDecision=="Y"){
      writePassword();
      }
-    
-     else{alert(`Choice not valid`)}}
+     else{alert(`Choice not valid, impossible to create a password`)}}
    
-else{alert(`Choice not valid`)}
+else{alert(`Password should include at least 8 characters and maximum 128`)}
     
 // Write password to the #password input
 function writePassword() {
